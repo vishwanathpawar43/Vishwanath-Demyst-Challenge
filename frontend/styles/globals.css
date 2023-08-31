@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700;800&display=swap");
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+* {
+  margin: 0;
+  font-family: "Karla", sans-serif;
+}
+
+body{
+    background-color: rgba(248, 248, 248, 0.5);
+}
