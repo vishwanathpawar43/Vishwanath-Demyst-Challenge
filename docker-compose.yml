@@ -1,5 +1,14 @@
 version: "3"
 services:
+  # Create frontend container
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:3000"
+    container_name: frontend-docker
+    restart: always
+    depends_on:
+      - backend
   # Create backend container
   backend:
     build: ./backend
@@ -7,14 +16,3 @@ services:
       - "4000:4000"
     container_name: backend-docker
     restart: always
-  # Create frontend container
-  frontend: 
-    build: ./frontend 
-    ports: 
-      - "3000:3000"
-    container_name: frontend-docker
-    restart: always
-    links:
-      - backend
-  
-  
