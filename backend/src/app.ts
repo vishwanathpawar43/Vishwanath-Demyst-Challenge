@@ -16,7 +16,7 @@ const startServer = async () => {
   app.use(express.json());
   app.use(express.urlencoded({ extended: false }));
   app.use("/api/v1/application", applicationRouter);
-  app.use(express.static(path.join(__dirname, "../../frontend/dist")));
+//   app.use(express.static(path.join(__dirname, "../../frontend/dist")));
 
   app.get("/", (req: Request, res: Response) => {
     res.status(200).json({
