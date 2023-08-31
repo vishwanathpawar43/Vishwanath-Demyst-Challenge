@@ -43,15 +43,15 @@ const Review: React.FC = () => {
     navigate("/");
   };
 
-  const handleSubmit = async (): // event: FormEvent<HTMLFormElement>
+  const handleSubmit = async (): 
   Promise<void> => {
-    // event.preventDefault();
     setLoading(true);
-
     const formDataJSON = {
       ...data,
       balanceSheet,
     };
+
+    // const url="http://backend:4000/api/v1/application/submit";
 
     try {
       const response = await axios.post(

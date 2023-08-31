@@ -80,6 +80,8 @@ const Home: React.FC = () => {
       accountProvider: formData.accountProvider,
     };
 
+    // const url = "http://backend:4000/api/v1/application/details";
+
     try {
       const response = await axios.post(
         "http://localhost:4000/api/v1/application/details",

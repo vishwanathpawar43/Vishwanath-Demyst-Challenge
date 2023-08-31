@@ -7,8 +7,12 @@ Frameworks/Libraries used:
 
 To start the app:
 
-- Go to backend directory
+- Go to frontend and backend directory
 - Run 'npm run dev'
+
+OR
+
+- docker-compose up --build
 
 Author:
 
