@@ -6,9 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon src/index.ts",
-    "build": "rimraf dist && tsc",
-    "ts.check": "tsc --project tsconfig.json",
-    "add-build": "git add dist"
+    "build": "tsc --project ."
   },
   "keywords": [],
   "author": "",
@@ -26,10 +24,5 @@
     "pre-commit": "^1.2.2",
     "rimraf": "^5.0.1",
     "typescript": "^5.2.2"
-  },
-  "pre-commit": [
-    "ts.check",
-    "build",
-    "add-build"
-  ]
+  }
 }
